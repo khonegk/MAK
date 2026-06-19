@@ -4,513 +4,503 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Workshop — Портфолио команды</title>
+    <title>Workshop — Портфолио</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- Переключатель: главные фамилии сверху -->
-<nav class="switcher">
-    <button class="switcher__btn active" data-target="aigunov">Айгунов Магомед</button>
-    <button class="switcher__btn" data-target="gadzhiev">Гаджиев Хабибулла</button>
-    <button class="switcher__btn" data-target="abdulkerimov">Абдулкеримов Али</button>
+<nav class="switcher" id="switcher">
+    <button class="switcher__btn active" id="btn-aigunov" data-target="aigunov">Айгунов Магомед</button>
+    <button class="switcher__btn" id="btn-gadzhiev" data-target="gadzhiev">Гаджиев Хабибулла</button>
+    <button class="switcher__btn" id="btn-abdulkerimov" data-target="abdulkerimov">Абдулкеримов Али</button>
 </nav>
 
-<!-- ================= ПРОФИЛЬ 1: АЙГУНОВ ================= -->
-<div class="profile active" id="aigunov">
+<main class="page" id="page">
 
-    <section class="hero">
-        <div class="hero__badge">Открыт к проектам</div>
-        <div class="hero__name">Айгунов Магомед</div>
-        <h1 class="hero__role">Backend<br>Developer</h1>
-        <p class="hero__desc">
-            Разрабатываю серверную логику, REST API и базы данных.
-            Надёжный код, безопасность и производительность — в приоритете.
-        </p>
-        <div class="hero__buttons">
-            <a href="#projects-aigunov" class="btn btn--primary">Посмотреть работы</a>
-            <a href="#social-aigunov" class="btn btn--ghost">Оставить заявку</a>
-        </div>
-        <div class="hero__stats">
-            <div class="stat"><div class="stat__value">3</div><div class="stat__label">Проекта</div></div>
-            <div class="stat"><div class="stat__value">2025</div><div class="stat__label">Год старта</div></div>
-            <div class="stat"><div class="stat__value">99.9%</div><div class="stat__label">Аптайм</div></div>
-        </div>
-    </section>
+    <!-- ================= АЙГУНОВ — BACKEND ================= -->
+    <div class="profile active" id="aigunov">
+        <div class="card-layout" id="aigunov-layout">
 
-    <section>
-        <div class="section-eyebrow">Что умею</div>
-        <h2 class="section-title">Навыки</h2>
-        <div class="skills__grid">
-            <div class="skill-card">
-                <span class="skill-card__icon">🐍</span>
-                <div class="skill-card__title">Python</div>
-                <div class="skill-card__sub">Серверная логика</div>
-            </div>
-            <div class="skill-card">
-                <span class="skill-card__icon">🚀</span>
-                <div class="skill-card__title">FastAPI / Django</div>
-                <div class="skill-card__sub">Веб-фреймворки</div>
-            </div>
-            <div class="skill-card">
-                <span class="skill-card__icon">🗄️</span>
-                <div class="skill-card__title">PostgreSQL</div>
-                <div class="skill-card__sub">Базы данных</div>
-            </div>
-            <div class="skill-card">
-                <span class="skill-card__icon">🔌</span>
-                <div class="skill-card__title">REST API</div>
-                <div class="skill-card__sub">Проектирование</div>
-            </div>
-            <div class="skill-card">
-                <span class="skill-card__icon">🐳</span>
-                <div class="skill-card__title">Docker</div>
-                <div class="skill-card__sub">Контейнеризация</div>
-            </div>
-            <div class="skill-card">
-                <span class="skill-card__icon">🔧</span>
-                <div class="skill-card__title">Git & GitHub</div>
-                <div class="skill-card__sub">Версионирование</div>
-            </div>
-            <div class="skill-card">
-                <span class="skill-card__icon">⚡</span>
-                <div class="skill-card__title">Redis</div>
-                <div class="skill-card__sub">Кэширование</div>
-            </div>
-            <div class="skill-card">
-                <span class="skill-card__icon">🔐</span>
-                <div class="skill-card__title">Аутентификация</div>
-                <div class="skill-card__sub">JWT, OAuth2</div>
-            </div>
-        </div>
-    </section>
+            <!-- Левая боковая карточка -->
+            <aside class="side-card" id="aigunov-side-card">
+                <div class="side-card__photo" id="aigunov-photo">
+                    <img src="img/d36ce01c2ff2642c1315082687354a22.jpg" alt="Айгунов Магомед">
 
-    <section id="projects-aigunov">
-        <div class="section-eyebrow">Мои работы</div>
-        <h2 class="section-title">Проекты</h2>
-        <div class="projects__grid">
-            <div class="project-card">
-                <div class="project-card__cover">
-                    <span class="project-card__tag">REST API</span>
-                    <span>Превью / схема API</span>
-                    <span class="project-card__year">2025</span>
                 </div>
-                <div class="project-card__body">
-                    <div class="project-card__title">API для интернет-магазина</div>
-                    <div class="project-card__desc">Backend на FastAPI: каталог товаров, корзина, заказы, авторизация пользователей по JWT.</div>
-                    <div class="project-card__stack">
-                        <span class="stack-pill">Python</span>
-                        <span class="stack-pill">FastAPI</span>
-                        <span class="stack-pill">PostgreSQL</span>
+                <h2 class="side-card__name" id="aigunov-name">Айгунов<br>Магомед</h2>
+                <p class="side-card__location" id="aigunov-location">Mахачкала, 18 лет</p>
+
+                <div class="side-card__stats" id="aigunov-stats">
+                    <div class="side-stat" id="aigunov-stat-1">
+                        <span class="side-stat__num">1</span>
+                        <span class="side-stat__text">год<br>в разработке</span>
                     </div>
-                    <a href="#" class="project-card__link">GitHub →</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-card__cover">
-                    <span class="project-card__tag">Telegram-бот</span>
-                    <span>Превью / лог бота</span>
-                    <span class="project-card__year">2025</span>
-                </div>
-                <div class="project-card__body">
-                    <div class="project-card__title">Бот для записи на услуги</div>
-                    <div class="project-card__desc">Telegram-бот с собственной базой данных: запись клиентов, напоминания, админ-панель.</div>
-                    <div class="project-card__stack">
-                        <span class="stack-pill">Python</span>
-                        <span class="stack-pill">Aiogram</span>
-                        <span class="stack-pill">SQLite</span>
+                    <div class="side-stat" id="aigunov-stat-2">
+                        <span class="side-stat__num">1</span>
+                        <span class="side-stat__text">год<br>с базами данных</span>
                     </div>
-                    <a href="#" class="project-card__link">GitHub →</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-card__cover">
-                    <span class="project-card__tag">Микросервис</span>
-                    <span>Превью / схема сервиса</span>
-                    <span class="project-card__year">2025</span>
-                </div>
-                <div class="project-card__body">
-                    <div class="project-card__title">Сервис авторизации</div>
-                    <div class="project-card__desc">Отдельный микросервис для аутентификации: регистрация, токены, роли пользователей, развёрнут в Docker.</div>
-                    <div class="project-card__stack">
-                        <span class="stack-pill">Python</span>
-                        <span class="stack-pill">Django</span>
-                        <span class="stack-pill">Docker</span>
+                    <div class="side-stat" id="aigunov-stat-3">
+                        <span class="side-stat__num">1</span>
+                        <span class="side-stat__text">год<br>с Docker</span>
                     </div>
-                    <a href="#" class="project-card__link">GitHub →</a>
                 </div>
-            </div>
-        </div>
-    </section>
+            </aside>
 
-    <section id="social-aigunov">
-        <div class="social">
-            <div>
-                <div class="section-eyebrow">Мои соц сети</div>
-                <h2 class="social__heading">
-                    Работаю, живу,<br>показываю.<br><br>
-                    Интересно,<br>
-                    <span class="social__accent">чем живу и занимаюсь?</span><br>
-                    Заглядывайте.
-                </h2>
-                <p class="social__note">Рабочий процесс, новые проекты и жизнь вне экрана — всё в одном месте.</p>
-            </div>
-            <div class="social__list">
-                <a href="#" class="social__item">
-                    <div class="social__item-left">
-                        <span class="social__icon">✈️</span>
-                        <div>
-                            <div class="social__name">Telegram</div>
-                            <div class="social__handle">@Patr1cks_star</div>
+            <!-- Центральная колонка: навыки -->
+            <section class="main-col" id="aigunov-main">
+                <h1 class="role-title" id="aigunov-role-title">Backend Developer</h1>
+
+                <div class="skills" id="aigunov-skills">
+                    <span class="skills__vertical-label">Skills</span>
+                    <div class="skills__list" id="aigunov-skills-list">
+
+                        <div class="skill-row" id="aigunov-skill-1">
+                            <div class="skill-row__top">
+                                <span class="skill-row__name">Python / FastAPI</span>
+                                <span class="skill-row__value" id="aigunov-skill-1-value">8/10</span>
+                            </div>
+                            <div class="skill-row__bar">
+                                <div class="skill-row__fill" id="aigunov-skill-1-fill" data-target-width="80%" style="width:80%"></div>
+                            </div>
                         </div>
-                    </div>
-                    <span>→</span>
-                </a>
-                <a href="#" class="social__item">
-                    <div class="social__item-left">
-                        <span class="social__icon">📷</span>
-                        <div>
-                            <div class="social__name">Discord</div>
-                            <div class="social__handle">@patricks_star</div>
+
+                        <div class="skill-row" id="aigunov-skill-2">
+                            <div class="skill-row__top">
+                                <span class="skill-row__name">PostgreSQL / SQL</span>
+                                <span class="skill-row__value" id="aigunov-skill-2-value">10/10</span>
+                            </div>
+                            <div class="skill-row__bar">
+                                <div class="skill-row__fill" id="aigunov-skill-2-fill" data-target-width="80%" style="width:100%"></div>
+                            </div>
                         </div>
-                    </div>
-                    <span>→</span>
-                </a>
-                <a href="#" class="social__item">
-                    <div class="social__item-left">
-                        <span class="social__icon">🎵</span>
-                        <div>
-                            <div class="social__name">TikTok</div>
-                            <div class="social__handle">@P1</div>
+
+                        <div class="skill-row" id="aigunov-skill-3">
+                            <div class="skill-row__top">
+                                <span class="skill-row__name">REST API / Django</span>
+                                <span class="skill-row__value" id="aigunov-skill-3-value">7/10</span>
+                            </div>
+                            <div class="skill-row__bar">
+                                <div class="skill-row__fill" id="aigunov-skill-3-fill" data-target-width="70%" style="width:70%"></div>
+                            </div>
                         </div>
+
+                        <div class="skill-row" id="aigunov-skill-4">
+                            <div class="skill-row__top">
+                                <span class="skill-row__name">Docker / DevOps</span>
+                                <span class="skill-row__value" id="aigunov-skill-4-value">6/10</span>
+                            </div>
+                            <div class="skill-row__bar">
+                                <div class="skill-row__fill" id="aigunov-skill-4-fill" data-target-width="60%" style="width:60%"></div>
+                            </div>
+                        </div>
+
                     </div>
-                    <span>→</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">© 2025 Айгунов Магомед. Все права защищены.</footer>
-</div>
-
-<!-- ================= ПРОФИЛЬ 2: ГАДЖИЕВ ================= -->
-<div class="profile" id="gadzhiev">
-
-    <section class="hero">
-        <div class="hero__badge">Открыт к проектам</div>
-        <div class="hero__name">Гаджиев Хабибулла</div>
-        <h1 class="hero__role">Frontend<br>Developer</h1>
-        <p class="hero__desc">
-            Создаю лендинги, сайты-визитки и одностраничники.
-            Чистый код, адаптивная вёрстка — без шаблонов.
-        </p>
-        <div class="hero__buttons">
-            <a href="#projects-gadzhiev" class="btn btn--primary">Посмотреть работы</a>
-            <a href="#social-gadzhiev" class="btn btn--ghost">Оставить заявку</a>
-        </div>
-        <div class="hero__stats">
-            <div class="stat"><div class="stat__value">2</div><div class="stat__label">Проекта</div></div>
-            <div class="stat"><div class="stat__value">2025</div><div class="stat__label">Год старта</div></div>
-            <div class="stat"><div class="stat__value">100%</div><div class="stat__label">Адаптивность</div></div>
-        </div>
-    </section>
-
-    <section>
-        <div class="section-eyebrow">Что умею</div>
-        <h2 class="section-title">Навыки</h2>
-        <div class="skills__grid">
-            <div class="skill-card">
-                <span class="skill-card__icon">🧱</span>
-                <div class="skill-card__title">HTML5</div>
-                <div class="skill-card__sub">Семантика & структура</div>
-            </div>
-            <div class="skill-card">
-                <span class="skill-card__icon">🎨</span>
-                <div class="skill-card__title">CSS3</div>
-                <div class="skill-card__sub">Стили & анимации</div>
-            </div>
-            <div class="skill-card">
-                <span class="skill-card__icon">⚡</span>
-                <div class="skill-card__title">JavaScript</div>
-                <div class="skill-card__sub">Интерактив</div>
-            </div>
-            <div class="skill-card">
-                <span class="skill-card__icon">📐</span>
-                <div class="skill-card__title">Flexbox / Grid</div>
-                <div class="skill-card__sub">Вёрстка макетов</div>
-            </div>
-            <div class="skill-card">
-                <span class="skill-card__icon">📱</span>
-                <div class="skill-card__title">Адаптивность</div>
-                <div class="skill-card__sub">Mobile-first</div>
-            </div>
-            <div class="skill-card">
-                <span class="skill-card__icon">🔧</span>
-                <div class="skill-card__title">Git & GitHub</div>
-                <div class="skill-card__sub">Версионирование</div>
-            </div>
-            <div class="skill-card">
-                <span class="skill-card__icon">🖌️</span>
-                <div class="skill-card__title">Figma</div>
-                <div class="skill-card__sub">Работа по макету</div>
-            </div>
-            <div class="skill-card">
-                <span class="skill-card__icon">🌐</span>
-                <div class="skill-card__title">Лендинги</div>
-                <div class="skill-card__sub">Специализация</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects-gadzhiev">
-        <div class="section-eyebrow">Мои работы</div>
-        <h2 class="section-title">Проекты</h2>
-        <div class="projects__grid">
-            <div class="project-card">
-                <div class="project-card__cover">
-                    <span class="project-card__tag">Первый проект</span>
-                    <span>Фото / превью проекта</span>
-                    <span class="project-card__year">2025</span>
                 </div>
-                <div class="project-card__body">
-                    <div class="project-card__title">Название проекта</div>
-                    <div class="project-card__desc">Краткое описание проекта: что сделано, какие задачи решались, какой результат.</div>
-                    <div class="project-card__stack">
-                        <span class="stack-pill">HTML</span>
-                        <span class="stack-pill">CSS</span>
-                    </div>
-                    <a href="#" class="project-card__link">Открыть →</a>
+
+                <p class="main-col__text" id="aigunov-text">
+                    Мой технические познания помогли мне глубоко понимать архитектуру систем
+                    и находить общий язык с frontend-командой при проектировании API.
+                </p>
+
+                <button class="experience-btn" id="aigunov-experience-btn" type="button">
+                    Мой опыт
+                    <span class="experience-btn__arrow">↓</span>
+                </button>
+            </section>
+
+
+
+            <!-- Правая колонка: инструменты -->
+            <aside class="tools-col" id="aigunov-tools">
+                <span class="tools-col__vertical-label">Instruments</span>
+                <ul class="tools-list" id="aigunov-tools-list">
+                    <li>PyCharm</li>
+                    <li>Postman</li>
+                    <li>Docker Desktop</li>
+                    <li>DBeaver</li>
+                    <li>Git / GitHub</li>
+                    <li>Linux / Bash</li>
+                    <li>Redis</li>
+                    <li>Nginx</li>
+                </ul>
+            </aside>
+
+            <!-- Секция проектов (скрыта по умолчанию) -->
+            <div class="projects-section" id="aigunov-projects">
+                <h3 class="projects-title">Мои работы</h3>
+
+                <div class="projects-grid">
+                    <!-- Проект 1 -->
+                    <article class="project-card">
+                        <div class="project-card__preview">
+                            <!-- Сюда можно вставить картинку или оставить текст -->
+                            <span>Превью / схема API</span>
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__header">
+                                <span class="project-tag">REST API</span>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <h4 class="project-card__title">API для интернет-магазина</h4>
+                            <p class="project-card__desc">Backend на FastAPI: каталог товаров, корзина, заказы, авторизация пользователей по JWT.</p>
+                            <div class="project-tech">
+                                <span>Python</span><span>FastAPI</span><span>PostgreSQL</span>
+                            </div>
+                            <a href="https://github.com/Patrick-grok" target="_blank" class="project-link">GitHub &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Проект 2 -->
+                    <article class="project-card">
+                        <div class="project-card__preview">
+                            <span>Превью / лог бота</span>
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__header">
+                                <span class="project-tag">TELEGRAM-BOT</span>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <h4 class="project-card__title">Бот для записи на услуги</h4>
+                            <p class="project-card__desc">Telegram-бот с собственной базой данных: запись клиентов, напоминания, админ-панель.</p>
+                            <div class="project-tech">
+                                <span>Python</span><span>Aiogram</span><span>SQLite</span>
+                            </div>
+                            <a href="https://github.com/Patrick-grok" target="_blank" class="project-link">GitHub &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Социальные сети -->
+                <div class="social-links">
+                    <a href="#" target="_blank" class="social-btn telegram">Telegram</a>
+                    <a href="#" target="_blank" class="social-btn discord">Discord</a>
+                    <a href="#" target="_blank" class="social-btn github">GitHub</a>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-card__cover">
-                    <span class="project-card__tag">Лендинг</span>
-                    <span>Фото / превью проекта</span>
-                    <span class="project-card__year">2025</span>
-                </div>
-                <div class="project-card__body">
-                    <div class="project-card__title">Название проекта</div>
-                    <div class="project-card__desc">Краткое описание проекта: что сделано, какие задачи решались, какой результат.</div>
-                    <div class="project-card__stack">
-                        <span class="stack-pill">HTML</span>
-                        <span class="stack-pill">CSS</span>
-                        <span class="stack-pill">JS</span>
-                    </div>
-                    <a href="#" class="project-card__link">GitHub →</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="social-gadzhiev">
-        <div class="social">
-            <div>
-                <div class="section-eyebrow">Мои соц сети</div>
-                <h2 class="social__heading">
-                    Работаю, живу,<br>показываю.<br><br>
-                    Интересно,<br>
-                    <span class="social__accent">чем живу и занимаюсь?</span><br>
-                    Заглядывайте.
-                </h2>
-                <p class="social__note">Рабочий процесс, новые проекты и жизнь вне экрана — всё в одном месте.</p>
-            </div>
-            <div class="social__list">
-                <a href="#" class="social__item">
-                    <div class="social__item-left">
-                        <span class="social__icon">✈️</span>
-                        <div>
-                            <div class="social__name">Telegram</div>
-                            <div class="social__handle">@username</div>
+        </div>
+    </div>
+
+    <!-- ================= ГАДЖИЕВ — FRONTEND ================= -->
+    <div class="profile" id="gadzhiev">
+        <div class="card-layout" id="gadzhiev-layout">
+
+            <aside class="side-card" id="gadzhiev-side-card">
+                <div class="side-card__photo" id="gadzhiev-photo">
+                    <img src="img/Visit%20TikTok%20to%20discover%20profiles!.jpeg" alt="Гаджиев Хабибулла">
+                </div>
+                <h2 class="side-card__name" id="gadzhiev-name">Гаджиев<br>Хабибулла</h2>
+                <p class="side-card__location" id="gadzhiev-location">Mахачкала, 17 лет</p>
+
+                <div class="side-card__stats" id="gadzhiev-stats">
+                    <div class="side-stat" id="gadzhiev-stat-1">
+                        <span class="side-stat__num">1</span>
+                        <span class="side-stat__text">год<br>в вёрстке</span>
+                    </div>
+                    <div class="side-stat" id="gadzhiev-stat-2">
+                        <span class="side-stat__num">1</span>
+                        <span class="side-stat__text">год<br>с JavaScript</span>
+                    </div>
+                    <div class="side-stat" id="gadzhiev-stat-3">
+                        <span class="side-stat__num">1</span>
+                        <span class="side-stat__text">год<br>с React</span>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="main-col" id="gadzhiev-main">
+                <h1 class="role-title" id="gadzhiev-role-title">Fullstack Developer</h1>
+
+                <div class="skills" id="gadzhiev-skills">
+                    <span class="skills__vertical-label">Skills</span>
+                    <div class="skills__list" id="gadzhiev-skills-list">
+
+                        <div class="skill-row" id="gadzhiev-skill-1">
+                            <div class="skill-row__top">
+                                <span class="skill-row__name">HTML / CSS</span>
+                                <span class="skill-row__value" id="gadzhiev-skill-1-value">9/10</span>
+                            </div>
+                            <div class="skill-row__bar">
+                                <div class="skill-row__fill" id="gadzhiev-skill-1-fill" data-target-width="90%" style="width:90%"></div>
+                            </div>
                         </div>
-                    </div>
-                    <span>→</span>
-                </a>
-                <a href="#" class="social__item">
-                    <div class="social__item-left">
-                        <span class="social__icon">📷</span>
-                        <div>
-                            <div class="social__name">Instagram</div>
-                            <div class="social__handle">@username</div>
+
+                        <div class="skill-row" id="gadzhiev-skill-2">
+                            <div class="skill-row__top">
+                                <span class="skill-row__name">JavaScript</span>
+                                <span class="skill-row__value" id="gadzhiev-skill-2-value">8/10</span>
+                            </div>
+                            <div class="skill-row__bar">
+                                <div class="skill-row__fill" id="gadzhiev-skill-2-fill" data-target-width="80%" style="width:80%"></div>
+                            </div>
                         </div>
-                    </div>
-                    <span>→</span>
-                </a>
-                <a href="#" class="social__item">
-                    <div class="social__item-left">
-                        <span class="social__icon">🎵</span>
-                        <div>
-                            <div class="social__name">TikTok</div>
-                            <div class="social__handle">@username</div>
+
+                        <div class="skill-row" id="gadzhiev-skill-3">
+                            <div class="skill-row__top">
+                                <span class="skill-row__name">Адаптивная вёрстка</span>
+                                <span class="skill-row__value" id="gadzhiev-skill-3-value">9/10</span>
+                            </div>
+                            <div class="skill-row__bar">
+                                <div class="skill-row__fill" id="gadzhiev-skill-3-fill" data-target-width="90%" style="width:90%"></div>
+                            </div>
                         </div>
+
+                        <div class="skill-row" id="gadzhiev-skill-4">
+                            <div class="skill-row__top">
+                                <span class="skill-row__name">React</span>
+                                <span class="skill-row__value" id="gadzhiev-skill-4-value">5/10</span>
+                            </div>
+                            <div class="skill-row__bar">
+                                <div class="skill-row__fill" id="gadzhiev-skill-4-fill" data-target-width="50%" style="width:50%"></div>
+                            </div>
+                        </div>
+
                     </div>
-                    <span>→</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">© 2025 Гаджиев Хабибулла. Все права защищены.</footer>
-</div>
-
-<!-- ================= ПРОФИЛЬ 3: АБДУЛКЕРИМОВ ================= -->
-<div class="profile" id="abdulkerimov">
-
-    <section class="hero">
-        <div class="hero__badge">Открыт к проектам</div>
-        <div class="hero__name">Абдулкеримов Али</div>
-        <h1 class="hero__role">Frontend<br>Developer</h1>
-        <p class="hero__desc">
-            Создаю лендинги, сайты-визитки и одностраничники.
-            Чистый код, адаптивная вёрстка — без шаблонов.
-        </p>
-        <div class="hero__buttons">
-            <a href="#projects-abdulkerimov" class="btn btn--primary">Посмотреть работы</a>
-            <a href="#social-abdulkerimov" class="btn btn--ghost">Оставить заявку</a>
-        </div>
-        <div class="hero__stats">
-            <div class="stat"><div class="stat__value">2</div><div class="stat__label">Проекта</div></div>
-            <div class="stat"><div class="stat__value">2025</div><div class="stat__label">Год старта</div></div>
-            <div class="stat"><div class="stat__value">100%</div><div class="stat__label">Адаптивность</div></div>
-        </div>
-    </section>
-
-    <section>
-        <div class="section-eyebrow">Что умею</div>
-        <h2 class="section-title">Навыки</h2>
-        <div class="skills__grid">
-            <div class="skill-card">
-                <span class="skill-card__icon">🧱</span>
-                <div class="skill-card__title">HTML5</div>
-                <div class="skill-card__sub">Семантика & структура</div>
-            </div>
-            <div class="skill-card">
-                <span class="skill-card__icon">🎨</span>
-                <div class="skill-card__title">CSS3</div>
-                <div class="skill-card__sub">Стили & анимации</div>
-            </div>
-            <div class="skill-card">
-                <span class="skill-card__icon">⚡</span>
-                <div class="skill-card__title">JavaScript</div>
-                <div class="skill-card__sub">Интерактив</div>
-            </div>
-            <div class="skill-card">
-                <span class="skill-card__icon">📐</span>
-                <div class="skill-card__title">Flexbox / Grid</div>
-                <div class="skill-card__sub">Вёрстка макетов</div>
-            </div>
-            <div class="skill-card">
-                <span class="skill-card__icon">📱</span>
-                <div class="skill-card__title">Адаптивность</div>
-                <div class="skill-card__sub">Mobile-first</div>
-            </div>
-            <div class="skill-card">
-                <span class="skill-card__icon">🔧</span>
-                <div class="skill-card__title">Git & GitHub</div>
-                <div class="skill-card__sub">Версионирование</div>
-            </div>
-            <div class="skill-card">
-                <span class="skill-card__icon">🖌️</span>
-                <div class="skill-card__title">Figma</div>
-                <div class="skill-card__sub">Работа по макету</div>
-            </div>
-            <div class="skill-card">
-                <span class="skill-card__icon">🌐</span>
-                <div class="skill-card__title">Лендинги</div>
-                <div class="skill-card__sub">Специализация</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects-abdulkerimov">
-        <div class="section-eyebrow">Мои работы</div>
-        <h2 class="section-title">Проекты</h2>
-        <div class="projects__grid">
-            <div class="project-card">
-                <div class="project-card__cover">
-                    <span class="project-card__tag">Первый проект</span>
-                    <span>Фото / превью проекта</span>
-                    <span class="project-card__year">2025</span>
                 </div>
-                <div class="project-card__body">
-                    <div class="project-card__title">Название проекта</div>
-                    <div class="project-card__desc">Краткое описание проекта: что сделано, какие задачи решались, какой результат.</div>
-                    <div class="project-card__stack">
-                        <span class="stack-pill">HTML</span>
-                        <span class="stack-pill">CSS</span>
-                    </div>
-                    <a href="#" class="project-card__link">Открыть →</a>
+
+                <p class="main-col__text" id="gadzhiev-text">
+                    Создаю интерфейсы, которые легко поддерживать: чистая структура,
+                    переиспользуемые компоненты и внимание к деталям на любом экране.
+                </p>
+
+                <button class="experience-btn" id="gadzhiev-experience-btn" type="button">
+                    Мой опыт
+                    <span class="experience-btn__arrow">↓</span>
+                </button>
+            </section>
+
+            <aside class="tools-col" id="gadzhiev-tools">
+                <span class="tools-col__vertical-label">Instruments</span>
+                <ul class="tools-list" id="gadzhiev-tools-list">
+                    <li>Figma</li>
+                    <li>VS Code</li>
+                    <li>Chrome DevTools</li>
+                    <li>Git / GitHub</li>
+                    <li>Vite</li>
+                    <li>Tailwind CSS</li>
+                    <li>npm</li>
+                    <li>Postman</li>
+                </ul>
+            </aside>
+
+            <!-- Секция проектов (скрыта по умолчанию) -->
+            <div class="projects-section" id="gadzhiev-projects">
+                <h3 class="projects-title">Мои работы</h3>
+
+                <div class="projects-grid">
+                    <!-- Проект 1 -->
+                    <article class="project-card">
+                        <div class="project-card__preview">
+                            <!-- Сюда можно вставить картинку или оставить текст -->
+                            <span>Превью / схема API</span>
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__header">
+                                <span class="project-tag">REST API</span>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <h4 class="project-card__title">API для интернет-магазина</h4>
+                            <p class="project-card__desc">Backend на FastAPI: каталог товаров, корзина, заказы, авторизация пользователей по JWT.</p>
+                            <div class="project-tech">
+                                <span>Python</span><span>FastAPI</span><span>PostgreSQL</span>
+                            </div>
+                            <a href="https://github.com/khonegk" target="_blank" class="project-link">GitHub &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Проект 2 -->
+                    <article class="project-card">
+                        <div class="project-card__preview">
+                            <span>Превью / лог бота</span>
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__header">
+                                <span class="project-tag">TELEGRAM-BOT</span>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <h4 class="project-card__title">Бот для записи на услуги</h4>
+                            <p class="project-card__desc">Telegram-бот с собственной базой данных: запись клиентов, напоминания, админ-панель.</p>
+                            <div class="project-tech">
+                                <span>Python</span><span>Aiogram</span><span>SQLite</span>
+                            </div>
+                            <a href="https://github.com/khonegk" target="_blank" class="project-link">GitHub &rarr;</a>
+                        </div>
+                    </article>
                 </div>
-            </div>
-            <div class="project-card">
-                <div class="project-card__cover">
-                    <span class="project-card__tag">Лендинг</span>
-                    <span>Фото / превью проекта</span>
-                    <span class="project-card__year">2025</span>
-                </div>
-                <div class="project-card__body">
-                    <div class="project-card__title">Название проекта</div>
-                    <div class="project-card__desc">Краткое описание проекта: что сделано, какие задачи решались, какой результат.</div>
-                    <div class="project-card__stack">
-                        <span class="stack-pill">HTML</span>
-                        <span class="stack-pill">CSS</span>
-                        <span class="stack-pill">JS</span>
-                    </div>
-                    <a href="#" class="project-card__link">GitHub →</a>
+
+                <!-- Социальные сети -->
+                <div class="social-links">
+                    <a href="#" target="_blank" class="social-btn telegram">Telegram</a>
+                    <a href="#" target="_blank" class="social-btn discord">Discord</a>
+                    <a href="#" target="_blank" class="social-btn github">GitHub</a>
                 </div>
             </div>
+
         </div>
-    </section>
+    </div>
 
-    <section id="social-abdulkerimov">
-        <div class="social">
-            <div>
-                <div class="section-eyebrow">Мои соц сети</div>
-                <h2 class="social__heading">
-                    Работаю, живу,<br>показываю.<br><br>
-                    Интересно,<br>
-                    <span class="social__accent">чем живу и занимаюсь?</span><br>
-                    Заглядывайте.
-                </h2>
-                <p class="social__note">Рабочий процесс, новые проекты и жизнь вне экрана — всё в одном месте.</p>
+    <!-- ================= АБДУЛКЕРИМОВ — КАКОЙ ЮАЙ??? FRONTEND DEV ================= -->
+    <div class="profile" id="abdulkerimov">
+        <div class="card-layout" id="abdulkerimov-layout">
+
+            <aside class="side-card" id="abdulkerimov-side-card">
+                <div class="side-card__photo" id="Абдулкеримов Али">
+                    <img src="img/киттио.jpg" alt="Abdulkerimov">
+                </div>
+                <h2 class="side-card__name" id="abdulkerimov-name">Абдулкеримов<br>Али</h2>
+                <p class="side-card__location" id="abdulkerimov-location">Сергокала, 18 лет</p>
+
+                <div class="side-card__stats" id="abdulkerimov-stats">
+                    <div class="side-stat" id="abdulkerimov-stat-1">
+                        <span class="side-stat__num">1</span>
+                        <span class="side-stat__text">год<br>в разработке</span>
+                    </div>
+                    <div class="side-stat" id="abdulkerimov-stat-2">
+                        <span class="side-stat__num">1</span>
+                        <span class="side-stat__text">года<br>в вёрстке</span>
+                    </div>
+                    <div class="side-stat" id="abdulkerimov-stat-3">
+                        <span class="side-stat__num">1</span>
+                        <span class="side-stat__text">год<br>в прототипировании</span>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="main-col" id="abdulkerimov-main">
+                <h1 class="role-title" id="abdulkerimov-role-title">FRONTEND DEVELOPER</h1>
+
+                <div class="skills" id="abdulkerimov-skills">
+                    <span class="skills__vertical-label">Skills</span>
+                    <div class="skills__list" id="abdulkerimov-skills-list">
+
+                        <div class="skill-row" id="abdulkerimov-skill-1">
+                            <div class="skill-row__top">
+                                <span class="skill-row__name">CSS</span>
+                                <span class="skill-row__value" id="abdulkerimov-skill-1-value">5/10</span>
+                            </div>
+                            <div class="skill-row__bar">
+                                <div class="skill-row__fill" id="abdulkerimov-skill-1-fill" data-target-width="50%" style="width:50%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-row" id="abdulkerimov-skill-2">
+                            <div class="skill-row__top">
+                                <span class="skill-row__name">JavaScript / TypeScript</span>
+                                <span class="skill-row__value" id="abdulkerimov-skill-2-value">8/10</span>
+                            </div>
+                            <div class="skill-row__bar">
+                                <div class="skill-row__fill" id="abdulkerimov-skill-2-fill" data-target-width="80%" style="width:80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-row" id="abdulkerimov-skill-3">
+                            <div class="skill-row__top">
+                                <span class="skill-row__name">Прототипирование</span>
+                                <span class="skill-row__value" id="abdulkerimov-skill-3-value">7/10</span>
+                            </div>
+                            <div class="skill-row__bar">
+                                <div class="skill-row__fill" id="abdulkerimov-skill-3-fill" data-target-width="70%" style="width:70%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-row" id="abdulkerimov-skill-4">
+                            <div class="skill-row__top">
+                                <span class="skill-row__name">HTML</span>
+                                <span class="skill-row__value" id="abdulkerimov-skill-4-value">8/10</span>
+                            </div>
+                            <div class="skill-row__bar">
+                                <div class="skill-row__fill" id="abdulkerimov-skill-4-fill" data-target-width="80%" style="width:80%"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <p class="main-col__text" id="abdulkerimov-text">
+                    Довольно быстро могу найти общий язык с разработчиками
+                    и эффективно работать в команде, знаю базу backend и
+                    могу облегчить ношу разработчикам.
+                </p>
+
+                <button class="experience-btn" id="abdulkerimov-experience-btn" type="button">
+                    Мой опыт
+                    <span class="experience-btn__arrow">↓</span>
+                </button>
+            </section>
+
+            <aside class="tools-col" id="abdulkerimov-tools">
+                <span class="tools-col__vertical-label">Instruments</span>
+                <ul class="tools-list" id="abdulkerimov-tools-list">
+                    <li>Figma</li>
+                    <li>Node.js</li>
+                    <li>JavaScript</li>
+                    <li>Git / Github</li>
+                    <li>Chrome DevTools</li>
+                    <li>TypeScript / Java DOM</li>
+                    <li>CSS / SCSS</li>
+                    <li>HTML</li>
+                </ul>
+            </aside>
+
+            <!-- Секция проектов (скрыта по умолчанию) -->
+            <div class="projects-section" id="abdulkerimov-projects">
+                <h3 class="projects-title">Мои работы</h3>
+
+                <div class="projects-grid">
+                    <!-- Проект 1 -->
+                    <article class="project-card">
+                        <div class="project-card__preview">
+                            <!-- Сюда можно вставить картинку или оставить текст -->
+                            <span>Превью / схема API</span>
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__header">
+                                <span class="project-tag">REST API</span>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <h4 class="project-card__title">API для интернет-магазина</h4>
+                            <p class="project-card__desc">Backend на FastAPI: каталог товаров, корзина, заказы, авторизация пользователей по JWT.</p>
+                            <div class="project-tech">
+                                <span>Python</span><span>FastAPI</span><span>PostgreSQL</span>
+                            </div>
+                            <a href="https://github.com/XzSuven" target="_blank" class="project-link">GitHub &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Проект 2 -->
+                    <article class="project-card">
+                        <div class="project-card__preview">
+                            <span>Превью / лог бота</span>
+                        </div>
+                        <div class="project-card__content">
+                            <div class="project-card__header">
+                                <span class="project-tag">TELEGRAM-BOT</span>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <h4 class="project-card__title">Бот для записи на услуги</h4>
+                            <p class="project-card__desc">Telegram-бот с собственной базой данных: запись клиентов, напоминания, админ-панель.</p>
+                            <div class="project-tech">
+                                <span>Python</span><span>Aiogram</span><span>SQLite</span>
+                            </div>
+                            <a href="https://github.com/XzSuven" target="_blank" class="project-link">GitHub &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Социальные сети -->
+                <div class="social-links">
+                    <a href="#" target="_blank" class="social-btn telegram">Telegram</a>
+                    <a href="#" target="_blank" class="social-btn discord">Discord</a>
+                    <a href="#" target="_blank" class="social-btn github">GitHub</a>
+                </div>
             </div>
-            <div class="social__list">
-                <a href="#" class="social__item">
-                    <div class="social__item-left">
-                        <span class="social__icon">✈️</span>
-                        <div>
-                            <div class="social__name">Telegram</div>
-                            <div class="social__handle">@username</div>
-                        </div>
-                    </div>
-                    <span>→</span>
-                </a>
-                <a href="#" class="social__item">
-                    <div class="social__item-left">
-                        <span class="social__icon">📷</span>
-                        <div>
-                            <div class="social__name">Instagram</div>
-                            <div class="social__handle">@username</div>
-                        </div>
-                    </div>
-                    <span>→</span>
-                </a>
-                <a href="#" class="social__item">
-                    <div class="social__item-left">
-                        <span class="social__icon">🎵</span>
-                        <div>
-                            <div class="social__name">TikTok</div>
-                            <div class="social__handle">@username</div>
-                        </div>
-                    </div>
-                    <span>→</span>
-                </a>
-            </div>
+
         </div>
-    </section>
+    </div>
 
-    <footer class="footer">© 2025 Абдулкеримов Али. Все права защищены.</footer>
-</div>
+</main>
 
-<script src=""></script>
-
+<script src="test.js"></script>
 </body>
 </html>
